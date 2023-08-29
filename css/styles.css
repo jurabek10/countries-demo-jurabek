@@ -1,5 +1,12 @@
-/* GLOBAL STYLES */
+/* CUSTOM-PROP */
+:root {
+    --text-color: #111517;
+    --content-bg-color: #fff;
+    --bg-color: #fafafa;
+}
 
+
+/* GLOBAL STYLES */
 html {
     height: 100%;
     box-sizing: border-box;
@@ -18,10 +25,10 @@ body {
     height: 100%;
     padding: 0;
     margin: 0;
-    font-size: 16px;
-    line-height: 1.5;
-    font-family: "Arial", sans-serif;
-    background-color: #fff;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: "Nunito sans", "Arial", sans-serif;
+    background-color: var(--bg-color);
     color: #222;
 }
 
@@ -34,9 +41,9 @@ img {
 
 .container {
     width: 100%;
-    max-width: 1200px;
-    padding-left: 50px;
-    padding-right: 50px;
+    max-width: 1440px;
+    padding-left: 80px;
+    padding-right: 80px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -45,4 +52,46 @@ img {
 
 main {
     flex-grow: 1;
+}
+
+
+/* SITE-HEADER */
+.site-header {
+    background-color: var(--content-bg-color);
+}
+
+.site-header-container {
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.site-header-heading {
+    margin: 0;
+    margin-right: auto;
+    color: var(--text-color);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    background-color: var(--content-bg-color);
+    border: 0;
+    color: var(--text-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.button-img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    margin-right: 8px;
 }
