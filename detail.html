@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,600;6..12,800&display=swap" rel="stylesheet">
+</head>
+<body class="dark-mode">
+    <header class="site-header">
+        <div class="site-header-container container">
+            <h2 class="site-header-heading">Where in the world?</h2>
+            <button class="button" type="button">
+                <img class="button-img" src="img/moon.svg" alt="Light" width="20" height="20">
+                <span>Dark Mode</span>
+            </button>
+        </div>
+    </header>
+
+
+    <!-- MAIN-CONTENT -->
+    <!-- DETAIL -->
+    <section class="detail">
+        <div class="container">
+            <div class="back">
+                <img class="icon-back" src="img/icon-left-long.svg" alt="Icon-back" width="20" height="20">
+                <a class="back-link" href="index.html">Back</a>
+            </div>
+
+            <div class="detail-container">
+                <img class="country-flag" src="img/belgium.jpg" alt="Belgium" width="560" height="483" srcset="img/belgium.jpg 1x, img/belgium@2x.jpg 2x">
+                <div class="country-info">
+                    <h2 class="country-info-name">Belgium</h2>
+                    <ul class="country-info-list">
+                        <li class="country-info-item">
+                            <p class="country-info-text">Native Name: België</p>
+                            <p class="country-info-text">Population: 11,319,511</p>
+                            <p class="country-info-text">Region: Europe</p>
+                            <p class="country-info-text">Sub Region: Western Europe</p>
+                            <p class="country-info-text">Capital: Brussels</p>
+                        </li>
+                        <li class="country-info-item">
+                            <p class="country-info-text">Top Level Domain: .be</p>
+                            <p class="country-info-text">Currencies: Euro</p>
+                            <p class="country-info-text">Languages: Dutch, French, German</p>
+                        </li>
+                    </ul>
+
+
+                    <!-- BORDER-COUNTRIES -->
+                    <div class="border-countries">
+                        <h3 class="border-countries-heading">Border Countries: </h3>
+                        <ul class="border-countries-list">
+                            <li class="border-countries-item">
+                                <a class="border-countries-link" href="#">France</a>
+                            </li>
+                            <li class="border-countries-item">
+                                <a class="border-countries-link" href="#">Germany</a>
+                            </li>
+                            <li class="border-countries-item">
+                                <a class="border-countries-link" href="#">Netherlands</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+    </body>
+    </html>
